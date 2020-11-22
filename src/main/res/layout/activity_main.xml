@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/id1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:text="开关连接状态:" />
+    <TextView
+        android:id="@+id/id2"
+        android:layout_toRightOf="@id/id1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="35dp"
+        android:text="未连接"
+        />
+    <Button
+        android:id="@+id/id3"
+        android:layout_below="@id/id1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_circle_shape"
+        android:textSize="20dp"
+        android:text="开"
+        android:alpha="0.5"
+        android:enabled="false"
+        />
+    <Button
+        android:id="@+id/id4"
+        android:layout_below="@id/id3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_circle_shape"
+        android:textSize="20dp"
+        android:text="关"
+        android:alpha="0.5"
+        android:enabled="false"
+        />
+
+</RelativeLayout>
